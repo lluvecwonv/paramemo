@@ -33,7 +33,7 @@ results/, gradient_alignment_results*/  # 결과 저장 경로 (gitignore 처리
 ### 1. 환경 설정
 
 ```bash
-git clone <repo_url>
+git clone https://github.com/lluvecwonv/paramemo.git
 cd paramem
 python -m venv .venv && source .venv/bin/activate
 pip install -r Influence-Functions/requirements.txt
