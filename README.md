@@ -12,7 +12,6 @@ Paramem은 대규모 언어모델이 학습 데이터 일부를 얼마나 암기
 - **패러프레이즈 생성 파이프라인**: Pile 및 TOFU와 같은 데이터셋에서 원문을 불러와 다양한 디코딩 전략(beam, nucleus 등)으로 의역 문장을 생성한다.
 - **Gradient Alignment 분석**: 원문과 패러프레이즈에 대한 출력층 그래디언트를 비교하여 코사인 유사도를 계산하고, 암기 전이 정도를 수치화한다.
 - **Membership Inference Attack (MIA)**: train/test 세트를 나누어 정렬도 분포 차이를 기반으로 AUROC, FPR@95, TPR@5 등을 계산한다.
-- **Batch 처리 도구**: 여러 도메인·모델 조합에 대해 자동으로 train/test 결과를 정리하고 JSON 포맷으로 저장한다.
 
 ## 디렉터리 구조 요약
 
