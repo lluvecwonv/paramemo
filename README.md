@@ -10,6 +10,7 @@ Paramem은 KSC 2025에 채택된
 의역(near-duplicate) 문장을 생성하여 모델의 반응을 비교하고,
 원문–패러프레이즈 쌍의 그래디언트 정렬도를 분석함으로써 의미적 메모라이제이션을 정량화하는 Paramem 프레임워크를 제공합니다.
 
+'''
 Paramem is the official codebase for the KSC 2025 paper
 “Measuring Memorization in Large Language Models via Near-Duplicate Sample Generation”.
 
