@@ -1,18 +1,22 @@
 # Paramem
 
-Paramem은 대규모 언어모델이 학습 데이터 일부를 얼마나 암기하고 있는지 측정하기 위한 연구·실험용 코드베이스다. 의역 문장을 생성해 모델의 반응을 비교하고, 원문과 패러프레이즈 간 그래디언트 정렬도를 분석함으로써 의미적 암기 여부를 평가한다.
 
-본 코드는 아래 논문 실험을 재현하고 확장하기 위해 제작되었으며, **KSC 2025에서 채택된 연구**를 바탕으로 한다.
+Paramem은 KSC 2025에 채택된
+「의역 문장 생성을 통한 거대 언어모델의 메모라이제이션 측정」
+(Measuring Memorization in Large Language Models via Near-Duplicate Sample Generation)
+논문의 공식 코드 저장소입니다.
 
-- 국문: **의역 문장 생성을 통한 거대 언어모델의 메모라이제이션 측정**
-- 영문: **Measuring Memorization in Large Language Models via Near-Duplicate Sample Generation**
+본 레포지토리는 대규모 언어모델이 학습 데이터 일부를 얼마나 암기하고 있는지를 측정하기 위해,
+의역(near-duplicate) 문장을 생성하여 모델의 반응을 비교하고,
+원문–패러프레이즈 쌍의 그래디언트 정렬도를 분석함으로써 의미적 메모라이제이션을 정량화하는 Paramem 프레임워크를 제공합니다.
 
-## 주요 기능
+Paramem is the official codebase for the KSC 2025 paper
+“Measuring Memorization in Large Language Models via Near-Duplicate Sample Generation”.
 
-- **패러프레이즈 생성 파이프라인**: Pile 및 TOFU와 같은 데이터셋에서 원문을 불러와 다양한 디코딩 전략(beam, nucleus 등)으로 의역 문장을 생성한다.
-- **Gradient Alignment 분석**: 원문과 패러프레이즈에 대한 출력층 그래디언트를 비교하여 코사인 유사도를 계산하고, 암기 전이 정도를 수치화한다.
-- **Membership Inference Attack (MIA)**: train/test 세트를 나누어 정렬도 분포 차이를 기반으로 AUROC, FPR@95, TPR@5 등을 계산한다.
-
+This repository provides the Paramem framework for quantifying memorization in large language models by
+(1) generating near-duplicate paraphrases of training samples,
+(2) comparing model outputs on originals vs. paraphrases, and
+(3) analyzing gradient alignment between each pair to assess semantic memorization.
 ## 디렉터리 구조 요약
 
 ```
