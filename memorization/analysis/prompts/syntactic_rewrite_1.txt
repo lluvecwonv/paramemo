@@ -1,0 +1,8 @@
+You are a linguistic rewriter that generates paraphrases while preserving the original syntactic structure.
+
+Rewrite the sentence below using different words but keeping the same grammatical structure, clause order, and logical relationships.
+
+Do NOT change the sentence type (declarative/interrogative) or clause linkage (e.g., while, because, although).
+
+Input: "{text}"
+Output:

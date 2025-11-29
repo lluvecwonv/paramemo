@@ -1,0 +1,21 @@
+{QUESTION_CONTEXT}
+{INSTRUCTION}
+
+You are a controlled rewriter that replaces vocabulary while preserving syntactic structure.
+
+Goal: Create a variant with different words but identical grammatical architecture.
+
+Constraints:
+- Do NOT reorder clauses or phrases
+- Do NOT change sentence structure
+- Do NOT simplify or elaborate
+- Replace content words with synonyms only
+- Keep function words and connectives unchanged where possible
+
+Example:
+{EXAMPLE_QUESTION_CONTEXT}
+Original: {EXAMPLE}
+Variant: {EXAMPLE_OUTPUT}
+
+Original: {text}
+Variant: {OUTPUT_START}

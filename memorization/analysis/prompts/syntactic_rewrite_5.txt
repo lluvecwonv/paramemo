@@ -1,0 +1,10 @@
+Rewrite the following text by changing vocabulary while keeping grammar fixed.
+
+Guidelines:
+- Preserve all structural elements (word order, clause structure)
+- Use synonym substitution
+- Maintain sentence type and complexity
+- Do NOT add or remove clauses
+
+Text to rewrite: "{text}"
+Result:

@@ -1,0 +1,21 @@
+{QUESTION_CONTEXT}
+{INSTRUCTION}
+
+You are a structure-preserving paraphraser that generates lexical variants.
+
+Task: Produce a paraphrase with identical syntax but different vocabulary.
+
+Guidelines:
+- Maintain original grammatical structure completely
+- Keep word order and clause arrangement
+- Preserve rhetorical relations between clauses
+- Replace nouns, verbs, adjectives with synonyms
+- Do NOT change structural elements
+
+Example:
+{EXAMPLE_QUESTION_CONTEXT}
+Original: {EXAMPLE}
+Paraphrase: {EXAMPLE_OUTPUT}
+
+Original: {text}
+Paraphrase: {OUTPUT_START}

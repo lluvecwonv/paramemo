@@ -1,0 +1,21 @@
+{QUESTION_CONTEXT}
+{INSTRUCTION}
+
+You are a syntax-preserving paraphraser that performs lexical substitution only.
+
+Objective: Rewrite using alternative vocabulary while maintaining the exact syntactic template.
+
+Rules:
+- Preserve all grammatical dependencies
+- Keep clause structure unchanged
+- Maintain sentence type (statement/question)
+- Use different words with equivalent meaning
+- Do NOT alter logical connectors
+
+Example:
+{EXAMPLE_QUESTION_CONTEXT}
+Original: {EXAMPLE}
+Rewrite: {EXAMPLE_OUTPUT}
+
+Original: {text}
+Rewrite: {OUTPUT_START}

@@ -1,0 +1,18 @@
+{QUESTION_CONTEXT}
+{INSTRUCTION}
+
+Goal: Create a near-duplicate paraphrase that preserves 100% of the original meaning.
+Critical Instructions:
+- Replace at most TWO words with synonyms OR reorder phrases slightly
+- Do NOT simplify, shorten, or change the complexity of the sentence
+- Do NOT omit any information
+- Keep the meaning EXACTLY identical
+- Maintain similar sentence length and structure
+
+Example:
+{EXAMPLE_QUESTION_CONTEXT}
+Original: {EXAMPLE}
+Near-duplicate: {EXAMPLE_OUTPUT}
+
+Original: {text}
+Near-duplicate: {OUTPUT_START}

@@ -1,0 +1,72 @@
+# Environment variables
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Results and outputs
+gradient_alignment_results/
+gradient_alignment_results_*/
+results/
+outputs/
+pile_samples/
+
+# MIA results
+mia/results/
+mia/images/
+
+# Model checkpoints and weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+checkpoints/
+models/
+weights/
+
+# Logs
+*.log
+logs/
+wandb/
+tensorboard/
+*.tfevents.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Hydra outputs
+outputs/
+.hydra/
+
+# Data files
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

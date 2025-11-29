@@ -1,0 +1,49 @@
+# MIA (Membership Inference Attack) Analysis Configuration
+
+# Model configuration
+model_family: pythia-2.8b
+model_path: EleutherAI/pythia-2.8b
+
+# Local file configuration (set use_local_files=true to use local data)
+use_local_files: false
+pile_samples_dir: ./pile_samples
+
+# Dataset configuration (used when use_local_files=false)
+dataset_name: iamgroot42/mimir  # or swj0419/WikiMIA, zjysteven/WikiMIA_paraphrased_perturbed
+dataset_config: arxiv  # for mimir: arxiv, pile_cc, wikipedia_(en), github, etc.
+dataset_split: ngram_13_0.2   # ngram_7_0.2, ngram_13_0.2, ngram_13_0.8
+
+# For WikiMIA datasets:
+# dataset_name: swj0419/WikiMIA
+# dataset_config: WikiMIA_length32  # WikiMIA_length32, WikiMIA_length64, WikiMIA_length128
+#
+# For WikiMIA paraphrased:
+# dataset_name: zjysteven/WikiMIA_paraphrased_perturbed
+# dataset_config: WikiMIA_length32_paraphrased
+
+# Available mimir configs:
+# - arxiv
+# - dm_mathematics
+# - github
+# - hackernews
+# - pile_cc
+# - pubmed_central
+# - wikipedia_(en)
+# - full_pile
+# - c4
+# - temporal_arxiv
+# - temporal_wiki
+
+# Model loading options
+half: false      # Use bfloat16
+int8: false      # Use 8-bit quantization
+
+# Metric configuration
+mink_ratios: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+
+# Output configuration
+output_dir: results
+save_csv: true
+
+# Device configuration
+device: cuda

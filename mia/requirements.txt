@@ -1,0 +1,7 @@
+scikit_learn
+pandas
+datasets
+accelerate
+transformers==4.39.0
+causal-conv1d>=1.2.0
+mamba-ssm==1.2.0.post1

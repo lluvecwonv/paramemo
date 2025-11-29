@@ -1,0 +1,23 @@
+# Gradient Alignment Analysis Configuration
+
+# Model configuration
+model_family: pythia-2.8b  # Model family name
+model_path: EleutherAI/pythia-2.8b  # Path to model (HuggingFace or local)
+
+# Analysis mode (choose one)
+# Mode 1: Single file mode
+paraphrase_results_file: null  # Path to single paraphrase results JSON
+
+# Mode 2: Batch mode (process all train/test pairs)
+results_dir: ./results  # Directory containing train/test JSON pairs
+output_dir: ./gradient_alignment_results  # Output directory for results
+
+# Processing parameters
+max_length: 512  # Maximum sequence length for tokenization
+batch_size: 1  # Batch size for gradient computation (minimum to prevent OOM)
+
+# Output
+output_file: ./gradient_alignment_result.json  # Output file for single mode
+
+# Device configuration (auto-detected)
+# CUDA_VISIBLE_DEVICES environment variable controls GPU selection

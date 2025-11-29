@@ -1,0 +1,10 @@
+Task: Paraphrase the given text by replacing words with synonyms while maintaining the exact grammatical structure.
+
+Requirements:
+- Keep the same sentence structure
+- Preserve clause order and connections
+- Do NOT change sentence length significantly
+- Use vocabulary substitution only
+
+Text: "{text}"
+Paraphrased version:

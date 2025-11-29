@@ -1,0 +1,10 @@
+Create a lexically different version of the text while preserving the exact syntactic template.
+
+Constraints:
+- Same sentence structure (no reordering)
+- Same clause structure (no merging/splitting)
+- Different words (synonyms preferred)
+- Same grammatical relationships
+
+Input text: "{text}"
+Paraphrase:

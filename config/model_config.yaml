@@ -1,0 +1,24 @@
+pythia-160m:
+  hf_key: "EleutherAI/pythia-160m"
+  flash_attention2: "false"
+  gradient_checkpointing: "false"
+
+pythia-1.4b:
+  hf_key: "EleutherAI/pythia-1.4b"
+  flash_attention2: "false"
+  gradient_checkpointing: "false"
+
+pythia-2.8b:
+  hf_key: "EleutherAI/pythia-2.8b"
+  flash_attention2: "false"
+  gradient_checkpointing: "false"
+
+pythia-6.7b:
+  hf_key: "EleutherAI/pythia-6.7b"
+  flash_attention2: "false"
+  gradient_checkpointing: "false"
+
+pythia-12b:
+  hf_key: "EleutherAI/pythia-12b"
+  flash_attention2: "false"
+  gradient_checkpointing: "false"

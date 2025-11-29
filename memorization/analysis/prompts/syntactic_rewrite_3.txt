@@ -1,0 +1,10 @@
+Generate a paraphrase that preserves syntactic structure but uses different vocabulary.
+
+Rules:
+1. Keep grammatical structure identical
+2. Maintain clause order and logical connectors
+3. Replace content words with synonyms
+4. Preserve function words (of, to, the, etc.)
+
+Original: "{text}"
+Rewritten:
