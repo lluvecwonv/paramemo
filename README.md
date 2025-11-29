@@ -18,6 +18,7 @@ This repository provides the Paramem framework for quantifying memorization in l
 (1) generating near-duplicate paraphrases of training samples,
 (2) comparing model outputs on originals vs. paraphrases, and
 (3) analyzing gradient alignment between each pair to assess semantic memorization.
+'''
 ## 디렉터리 구조 요약
 
 ```
